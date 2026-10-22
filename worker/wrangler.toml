@@ -1,0 +1,12 @@
+name = "hitasura-pedal-ranking"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Set this to the origin that serves the game (e.g. "https://example.github.io") once it is public.
+ALLOWED_ORIGIN = "*"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hitasura-pedal"
+database_id = "REPLACE_WITH_ID_FROM_wrangler_d1_create"

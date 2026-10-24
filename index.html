@@ -236,7 +236,7 @@ const SKIN_KEY='chikoku-dash-skin',NAME_KEY='chikoku-dash-name';
 let skinI=0;
 try{skinI=(parseInt(localStorage.getItem(SKIN_KEY)||'0',10)||0)%SKINS.length;}catch(_){}
 /* Set to your score API (GET -> [{name,m}], POST {name,m,top}). Empty keeps the ranking hidden. */
-const RANK_URL='';
+const RANK_URL='https://proud-cloud-9627.usumasafx.workers.dev/scores';
 
 /* ---------- state ---------- */
 function newPlayer(){return {y:GROUND,vy:0,onGround:true,jumps:0,wheel:0,inv:0,boost:0,floor:0,rot:0,launched:false,holdT:0,bounced:false,stand:null};}
